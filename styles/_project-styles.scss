@@ -1,8 +1,7 @@
-
 .wrapper {
 	display: block;
 	margin: 0 auto;
-	width: 550px;
+	max-width: 550px;
 }
 
 h1 {
@@ -47,4 +46,18 @@ footer {
 	position: absolute;
 	bottom: 0;
 	padding: $m;
+}
+
+@media (max-width: 550px) {
+	body .wrapper {
+		width: 90%;
+		display: block;
+	}	
+	section ul {
+		min-width: 100%;
+	}
+	footer {
+		bottom: 0;
+		position: relative;
+	}
 }
