@@ -1,31 +1,50 @@
+
 .wrapper {
-	width: 550px;
 	display: block;
 	margin: 0 auto;
+	width: 550px;
 }
 
+h1 {
+	margin-bottom: $m;
+	font-size: $fs-xl;
+	color: $dg;
+}
+
+		h2 {
+			font-size: $fs-lg;
+			&:before {
+				display: block;
+				margin: $p 0;
+				width: 70px;
+				height: $sm;
+				background: $dg;
+				content: "";
+			}
+		}
+		
 
 section {
 	padding: $p;
 
 	ul {
-		width: 50%;
+		&:not(.work) {
 		float: left;
+		width: 50%;
 
-		h2 {
-			font-size: $fs-lg;
-			&:before {
-				content: "";
-				display: block;
-				margin: $p 0;
-				width: 70px;
-				height: $m;
-				background: $dg;
-			}
-		}
-
-		li {
+		
+	}
+	li {
 			list-style-type: none;
+			padding-bottom: $sm;
+			line-height: $line-height;
 		}
 	}
+	
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	padding: $m;
 }
